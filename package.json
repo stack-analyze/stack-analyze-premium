@@ -1,0 +1,54 @@
+{
+  "name": "stack-analyze-premium",
+  "version": "1.0.0",
+  "description": "premium version of all stack-analyze and delta tools include",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "electron:linux": "electron-builder -l AppImage"
+  },
+  "keywords": [
+    "anlyze",
+    "premium"
+  ],
+  "build": {
+    "appId": "com.intermachinedevelopers.stack-analyze-premium",
+    "productName": "stack-analyze premium",
+    "asar": false,
+    "files": [
+      "app/**/*",
+      "main.js",
+      "icon.png",
+      "package.json",
+      "license.txt"
+    ],
+    "directories": {
+      "output": "./dist"
+    },
+    "copyright": "Intermachine Developers"
+  },
+  "author": "omega5300",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "expo-cli": "^4.5.2",
+    "fast-api-speedtest": "^0.0.5",
+    "html-validator": "^5.1.17",
+    "lyrics-finder": "^21.7.0",
+    "material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0",
+    "network-speed": "^2.1.1",
+    "speedtest-net": "^2.2.0",
+    "systeminformation": "^5.6.12",
+    "timeago.js": "^4.0.2",
+    "vue": "^3.0.11",
+    "vue-router": "^4.0.6",
+    "wappalyzer": "^6.5.33",
+    "whois-light": "^1.0.3"
+  },
+  "devDependencies": {
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
+    "eslint": "^7.24.0"
+  }
+}
